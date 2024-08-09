@@ -1,0 +1,78 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.reduce-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+
+    background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+
+
+    .reduce-title {
+        color: #fff;
+        font-size: 5rem;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        a {
+            position: absolute;
+            font-size: 12px;
+            color: yellow;
+            bottom: 0;
+            right: 0;
+            text-decoration: none;
+        }
+    }
+
+    .reduce-input-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+
+        #link {
+            border-radius: 10px;
+            border: none;
+            width: 400px;
+            height: 30px;
+            padding-left: 5px;
+        }
+
+        :focus {
+            outline: none;
+        }
+
+        #reduce-button {
+            background-color: orange;
+            width: 45px;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+    #reduce-result {
+        span {
+            display: inline-block;
+            width: auto;
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+}
